@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 55 38% 94%;
+    --foreground: 55 50% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 55 50% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 55 50% 20%;
+    --primary: 55 50% 20%;
+    --primary-foreground: 55 38% 94%;
+    --secondary: 0 26% 81%;
+    --secondary-foreground: 55 50% 20%;
+    --muted: 55 20% 90%;
+    --muted-foreground: 55 10% 45%;
+    --accent: 0 26% 81%;
+    --accent-foreground: 55 50% 20%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 55 30% 80%;
+    --input: 55 30% 80%;
+    --ring: 55 50% 20%;
+    --radius: 0.625rem;
+    --sage-cream: #f6f6e9;
+    --deep-olive: #4c4c17;
+    --warm-terracotta: #dfbfbf;
+    --light-grey: #e5e5e5;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-[#f6f6e9] text-[#4c4c17] font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+  .text-sage-cream {
+    color: var(--sage-cream);
+  }
+  .bg-sage-cream {
+    background-color: var(--sage-cream);
+  }
+  .text-deep-olive {
+    color: var(--deep-olive);
+  }
+  .bg-deep-olive {
+    background-color: var(--deep-olive);
+  }
+  .text-terracotta {
+    color: var(--warm-terracotta);
+  }
+  .bg-terracotta {
+    background-color: var(--warm-terracotta);
+  }
+}
